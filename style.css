@@ -1,0 +1,100 @@
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey-700: hsl(0, 0%, 20%);
+  --clr-grey-800: hsl(0, 0%, 12%);
+  --clr-grey-900: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(assets/fonts/static/Inter-VariableFont_slntwght.ttf);
+}
+
+body {
+  padding: 1rem;
+  background-color: var(--clr-grey-900);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+
+main {
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-white);
+}
+
+.card {
+  background-color: var(--clr-grey-800);
+  border-radius: 1.25rem;
+  padding: 3rem 2.5rem 1.5rem 2.5rem;
+  text-align: center;
+  max-width: 400px;
+}
+
+.card img {
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  color: var(--clr-green);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: bold;
+  color: var(--clr-white);
+  background-color: var(--clr-grey-700);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.card button a {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 475px) {
+  main {
+    margin: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
